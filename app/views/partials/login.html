@@ -1,0 +1,28 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li><a href="#/">Home</a></li>
+        <li class="active"><a ng-href="#">Upload</a></li>
+        <li><a ng-href="#">About</a></li>
+        <li><a ng-href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">imageRepository</h3>
+</div>
+
+<div class="jumbotron">
+    <h1>Login</h1>
+    <form ng-submit="login()">
+        <p>
+            {{ $rootScope.message }}
+        </p>
+        <p class="lead">
+            <label>Username</label>
+            <input type="text" placeholder="Username" ng-model="user.username" />
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" placeholder="Password" ng-model="user.password" />
+        </p>
+        <p><button type="submit" class="btn btn-lg btn-success">Login</button></p>
+        <p><a href="#/register">Register</a></p>
+    </form>
+</div>

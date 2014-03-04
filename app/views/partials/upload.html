@@ -1,0 +1,24 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li><a href="#/">Home</a></li>
+        <li class="active"><a ng-href="#">Upload</a></li>
+        <li><a ng-href="#">About</a></li>
+        <li><a ng-href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">imageRepository</h3>
+</div>
+
+<div class="jumbotron">
+    <h1>Upload an image</h1>
+    <form ng-submit="upload()">
+        <p class="lead">
+            <label>Title</label>
+            <input type="text" placeholder="Title" ng-model="image.title" />
+        </p>
+        <p>
+            <label>Description</label>
+            <textarea placeholder="Description" ng-model="image.description" />
+        </p>
+        <p><button type="submit" class="btn btn-lg btn-success">Upload</button></p>
+    </form>
+</div>

@@ -1,0 +1,46 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li><a href="#/">Home</a></li>
+        <li><a ng-href="#">Upload</a></li>
+        <li><a ng-href="#">About</a></li>
+        <li><a ng-href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">imageRepository</h3>
+</div>
+
+<div class="jumbotron">
+    <h1>Register</h1>
+    <form name="registrationForm" novalidate ng-submit="register()">
+        <p class="lead">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email" ng-model="user.email" required />
+            <span class="custom-error" ng-show="registrationForm.email.$dirty && registrationForm.email.$invalid">
+                <span ng-show="registrationForm.email.$error.required">Required</span>
+                <span ng-show="registrationForm.email.$invalid && !registrationForm.email.$error.required">Invalid</span>
+            </span>
+        </p>
+        <p class="lead">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Username" ng-model="user.username" required />
+            <span class="custom-error" ng-show="registrationForm.username.$dirty && registrationForm.username.$invalid">
+                <span ng-show="registrationForm.username.$error.required">Required</span>
+            </span>
+        </p>
+        <p>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password" ng-model="user.password" required />
+            <span class="custom-error" ng-show="registrationForm.password.$dirty && registrationForm.password.$invalid">
+                <span ng-show="registrationForm.password.$error.required">Required</span>
+            </span>
+        </p>
+        <p>
+            <label>Confirm Password</label>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" ng-model="user.confirmPassword" same-as="user.password" required />
+            <span class="custom-error" ng-show="registrationForm.confirmPassword.$dirty && registrationForm.confirmPassword.$invalid">
+                <span ng-show="registrationForm.confirmPassword.$error.required">Required</span>
+                <span ng-show="registrationForm.confirmPassword.$error.sameAs">Passwords don't match</span>
+            </span>
+        </p>
+        <p><button type="submit" class="btn btn-lg btn-success">Create New User</button></p>
+    </form>
+</div>
