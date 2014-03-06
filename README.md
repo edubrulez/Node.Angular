@@ -1,7 +1,5 @@
-ImageRepository
+Node/Angular Sample
 ===============
-
-A repository for uploading and tagging images in order to organize and search them later.
 
 An angular/node(express) app generated using yeoman.  More deets here: https://github.com/DaftMonk/generator-angular-fullstack
 
