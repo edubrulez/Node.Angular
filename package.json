@@ -6,7 +6,7 @@
     "mongoose": "~5.7.7",
     "async": "~0.2.9",
     "ejs": "~>2.5.5",
-    "bcrypt": "~0.7.7",
+    "bcrypt": "~5.0.0",
     "passport": ">=0.1.17",
     "passport-local": ">=0.1.6",
     "connect-mongo": ">=0.4.0",
